@@ -65,15 +65,13 @@ Knowing when to stop optimizing was as important as the wins above. Each of thes
 
 The recurring lesson: the danger map is a *noisy estimate*, and every attempt to optimize harder against it overfit and lost. The shipped design under-trusts it on purpose. Full detail and the web/academic literature check are in [STRATEGY_FINAL.md](STRATEGY_FINAL.md).
 
-## The three evaluation signals, and where to see them
+## Where to look
 
-- **Technical judgment** → the iteration tables above. Every move was a logged hypothesis; the rejected list shows the same rigor applied to *not* shipping things.
-- **Pragmatism** → [`src/agent.ts`](src/agent.ts). One loop on `responseType`, plain functions, pre-flight validation (an illegal move is a terminal DQ, so it's caught before sending). And honesty about the ~780–800 ceiling instead of chasing an unreachable 1000.
-- **Observability** → [`analysis/games_archive.jsonl`](analysis/games_archive.jsonl) (the loop's cross-attempt memory) and [`tools/`](tools/) (every claim above was verified here — heatmaps, determinism and adaptivity probes, an offline shot simulator, cross-validation).
+The whole loop is one file, [`src/agent.ts`](src/agent.ts): a single switch on `responseType`, plain functions, with pre-flight validation so a malformed move never reaches the server (an illegal move is a terminal disqualification, not a retry). The strategy lives in [`src/strategy.ts`](src/strategy.ts). [`analysis/games_archive.jsonl`](analysis/games_archive.jsonl) is the loop's memory across attempts — the danger maps are rebuilt from it. And [`tools/`](tools/) is where every claim in this README was actually checked: heatmaps, determinism and adaptivity probes, an offline shot simulator, the cross-validation.
 
-## Honest postmortem
+## A mistake worth recording
 
-While reverting a false-positive fingerprint near the end, I accidentally deleted a *valid* one (Andromeda Cruiser), which then played blind for ~16 banking attempts and silently capped them. A teammate's prompt to re-verify the fingerprints caught it; the fix landed in the final two minutes and immediately produced the session's two highest hit-differentials. The best score (787) predated the bug and was never at risk, but the analysis shows the bug likely cost a *higher* best. Full data and counterfactual in [RUN_OUTPUTS.md](RUN_OUTPUTS.md#postmortem). It's a clean example of the failure mode the whole project guards against — and of why observability + a second look matter.
+While reverting a false-positive fingerprint near the end, I accidentally deleted a *valid* one (Andromeda Cruiser) in the same edit. It played blind for ~16 banking attempts and quietly capped them before I re-checked the fingerprints and caught it. The fix landed in the last two minutes and immediately produced the session's two highest hit-differentials. 787 was banked before the bug so it stood, but the data shows I'd probably have beaten it otherwise. Full counterfactual in [RUN_OUTPUTS.md](RUN_OUTPUTS.md#postmortem). I left it in because the analysis is the useful part, and it's the exact failure mode the rest of the project is built to avoid: trusting something without re-checking it.
 
 ## Repository map
 
