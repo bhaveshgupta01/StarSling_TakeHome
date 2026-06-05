@@ -1,0 +1,624 @@
+
+> starsling-battleships-agent@1.0.0 play
+> node --experimental-strip-types src/agent.ts
+
+agentId: BxELedNF6PUcrXUyTbWVIDPnvqJUtIVr
+SHOT_LEVEL: 4
+rules: Standard Competition v2 (varied roster) | ships: [{"class":"CARRIER","length":5},{"class":"BATTLESHIP","length":4},{"class":"CRUISER","length":3},{"class":"SUBMARINE","length":3},{"class":"DESTROYER","length":2}] | timeout: 10
+G1/15 vs Hydra Probe (SCOUT) — placing ships
+G1 shot (0,0)   → HIT
+G1 shot (0,2)   → HIT
+G1 shot (0,4)   → HIT
+G1 shot (0,6)   → HIT
+G1 shot (1,0)   → HIT
+G1 shot (1,2)   → HIT
+G1 shot (1,4)   → HIT
+G1 shot (1,6)   → HIT
+G1 shot (1,8)   → HIT
+G1 shot (2,0)   → HIT
+G1 shot (2,2)   → HIT
+G1 shot (2,4)   → SINK CRUISER
+G1 shot (2,6)   → SINK SUBMARINE
+G1 shot (3,0)   → HIT
+G1 shot (3,2)   → SINK BATTLESHIP
+G1 shot (4,0)   → SINK CARRIER
+G1 shot (0,8)
+✓ Game 1 done — shots=16 hits=16 sunk=4 shipsLost=0 in=16
+G2/15 vs Lyra Skiff (SCOUT) — placing ships
+G2 shot (4,4)   → MISS
+G2 shot (3,3)   → MISS
+G2 shot (5,5)   → MISS
+G2 shot (2,2)   → HIT
+G2 shot (2,3)   → MISS
+G2 shot (3,2)   → HIT
+G2 shot (4,2)   → HIT
+G2 shot (5,2)   → MISS
+G2 shot (1,2)   → SINK BATTLESHIP
+G2 shot (6,6)   → MISS
+G2 shot (2,6)   → MISS
+G2 shot (3,7)   → MISS
+G2 shot (7,3)   → MISS
+G2 shot (8,4)   → HIT
+G2 shot (8,3)   → MISS
+G2 shot (8,5)   → HIT
+G2 shot (8,6)   → SINK CRUISER
+G2 shot (4,8)   → MISS
+G2 shot (6,0)   → HIT
+G2 shot (5,0)   → HIT
+G2 shot (4,0)   → MISS
+G2 shot (7,0)   → HIT
+G2 shot (8,0)   → HIT
+G2 shot (9,0)   → SINK CARRIER
+G2 shot (1,5)   → MISS
+G2 shot (0,6)   → MISS
+G2 shot (1,7)   → MISS
+G2 shot (3,5)   → MISS
+G2 shot (4,6)   → MISS
+G2 shot (5,7)   → HIT
+G2 shot (5,6)   → MISS
+G2 shot (4,7)   → HIT
+G2 shot (6,7)   → SINK SUBMARINE
+G2 shot (2,4)   → MISS
+G2 shot (6,4)   → MISS
+G2 shot (0,4)   → MISS
+G2 shot (0,8)   → MISS
+G2 shot (2,8)   → MISS
+G2 shot (6,2)   → MISS
+G2 shot (1,9)   → HIT
+G2 shot (0,9)   → MISS
+G2 shot (2,9)   → MISS
+G2 shot (1,8)
+✓ Game 2 done — shots=42 hits=16 sunk=4 shipsLost=1 in=42
+G3/15 vs Orion Scout (SCOUT) — placing ships
+G3 shot (4,4)   → MISS
+G3 shot (3,3)   → MISS
+G3 shot (5,5)   → MISS
+G3 shot (2,2)   → MISS
+G3 shot (6,6)   → MISS
+G3 shot (2,6)   → MISS
+G3 shot (6,2)   → HIT
+G3 shot (6,3)   → HIT
+G3 shot (6,1)   → HIT
+G3 shot (6,4)   → MISS
+G3 shot (6,0)   → SINK BATTLESHIP
+G3 shot (1,5)   → HIT
+G3 shot (1,4)   → MISS
+G3 shot (2,5)   → HIT
+G3 shot (3,5)   → HIT
+G3 shot (0,5)   → HIT
+G3 shot (4,5)   → SINK CARRIER
+G3 shot (1,1)   → MISS
+G3 shot (7,7)   → MISS
+G3 shot (8,5)   → HIT
+G3 shot (8,4)   → HIT
+G3 shot (8,3)   → MISS
+G3 shot (8,6)   → SINK SUBMARINE
+G3 shot (3,1)   → MISS
+G3 shot (2,0)   → MISS
+G3 shot (2,8)   → MISS
+G3 shot (3,7)   → MISS
+G3 shot (6,8)   → MISS
+G3 shot (0,2)   → MISS
+G3 shot (4,2)   → MISS
+G3 shot (3,9)   → MISS
+G3 shot (6,9)   → MISS
+G3 shot (1,3)   → MISS
+G3 shot (1,7)   → MISS
+G3 shot (4,8)   → MISS
+G3 shot (5,7)   → MISS
+G3 shot (9,1)   → MISS
+G3 shot (1,9)   → MISS
+G3 shot (8,1)   → MISS
+G3 shot (0,0)   → MISS
+G3 shot (0,8)   → HIT
+G3 shot (0,7)   → MISS
+G3 shot (1,8)   → MISS
+G3 shot (0,9)   → SINK DESTROYER
+G3 shot (0,6)   → MISS
+G3 shot (7,5)   → MISS
+G3 shot (5,9)   → MISS
+G3 shot (9,9)   → HIT
+G3 shot (8,9)   → HIT
+G3 shot (7,9)
+✓ Game 3 done — shots=49 hits=16 sunk=4 shipsLost=3 in=49
+G4/15 vs Eridanus Drone (SCOUT) — placing ships
+G4 shot (0,0)   → HIT
+G4 shot (0,1)   → HIT
+G4 shot (0,2)   → SINK CRUISER
+G4 shot (0,9)   → HIT
+G4 shot (1,9)   → HIT
+G4 shot (2,9)   → HIT
+G4 shot (3,6)   → HIT
+G4 shot (3,7)   → SINK DESTROYER
+G4 shot (3,9)   → HIT
+G4 shot (4,9)   → SINK CARRIER
+G4 shot (5,4)   → HIT
+G4 shot (7,4)   → HIT
+G4 shot (9,0)   → HIT
+G4 shot (9,1)   → HIT
+G4 shot (9,2)   → HIT
+G4 shot (9,3)   → SINK BATTLESHIP
+G4 shot (6,4)
+✓ Game 4 done — shots=16 hits=16 sunk=4 shipsLost=0 in=16
+G5/15 vs Pleiades Skimmer (SCOUT) — placing ships
+G5 shot (4,4)   → HIT
+G5 shot (4,3)   → HIT
+G5 shot (4,5)   → MISS
+G5 shot (4,2)   → HIT
+G5 shot (4,1)   → HIT
+G5 shot (4,0)   → SINK CARRIER
+G5 shot (2,6)   → MISS
+G5 shot (6,6)   → MISS
+G5 shot (1,3)   → MISS
+G5 shot (1,7)   → HIT
+G5 shot (1,6)   → MISS
+G5 shot (2,7)   → HIT
+G5 shot (3,7)   → SINK SUBMARINE
+G5 shot (7,3)   → HIT
+G5 shot (7,2)   → SINK DESTROYER
+G5 shot (0,2)   → HIT
+G5 shot (0,3)   → MISS
+G5 shot (0,0)   → HIT
+G5 shot (0,1)   → SINK CRUISER
+G5 shot (9,3)   → MISS
+G5 shot (3,9)   → MISS
+G5 shot (2,2)   → MISS
+G5 shot (7,7)   → MISS
+G5 shot (8,8)   → MISS
+G5 shot (9,5)   → MISS
+G5 shot (5,9)   → MISS
+G5 shot (6,2)   → MISS
+G5 shot (6,4)   → MISS
+G5 shot (1,9)   → MISS
+G5 shot (0,4)   → MISS
+G5 shot (0,8)   → MISS
+G5 shot (9,7)   → MISS
+G5 shot (9,9)   → HIT
+G5 shot (8,9)   → HIT
+G5 shot (7,9)   → HIT
+G5 shot (6,9)
+✓ Game 5 done — shots=35 hits=16 sunk=4 shipsLost=1 in=35
+G6/15 vs Cygnus Stalker (WARSHIP) — placing ships
+G6 shot (4,4)   → MISS
+G6 shot (3,3)   → MISS
+G6 shot (5,5)   → HIT
+G6 shot (5,4)   → MISS
+G6 shot (4,5)   → MISS
+G6 shot (5,6)   → HIT
+G6 shot (5,7)   → HIT
+G6 shot (5,8)   → HIT
+G6 shot (5,9)   → SINK CARRIER
+G6 shot (2,2)   → MISS
+G6 shot (7,3)   → MISS
+G6 shot (1,5)   → MISS
+G6 shot (5,1)   → MISS
+G6 shot (2,6)   → HIT
+G6 shot (2,5)   → MISS
+G6 shot (1,6)   → MISS
+G6 shot (2,7)   → SINK DESTROYER
+G6 shot (6,2)   → HIT
+G6 shot (5,2)   → MISS
+G6 shot (6,1)   → MISS
+G6 shot (7,2)   → HIT
+G6 shot (8,2)   → SINK SUBMARINE
+G6 shot (0,4)   → MISS
+G6 shot (4,0)   → MISS
+G6 shot (1,1)   → MISS
+G6 shot (8,6)   → MISS
+G6 shot (7,6)   → MISS
+G6 shot (9,6)   → MISS
+G6 shot (0,0)   → HIT
+G6 shot (0,1)   → MISS
+G6 shot (1,0)   → HIT
+G6 shot (2,0)   → HIT
+G6 shot (3,0)   → SINK BATTLESHIP
+G6 shot (0,6)   → MISS
+G6 shot (1,3)   → MISS
+G6 shot (1,9)   → MISS
+G6 shot (6,0)   → MISS
+G6 shot (2,4)   → MISS
+G6 shot (3,9)   → MISS
+G6 shot (0,2)   → MISS
+G6 shot (5,3)   → MISS
+G6 shot (9,1)   → MISS
+G6 shot (4,2)   → MISS
+G6 shot (3,7)   → MISS
+G6 shot (9,7)   → HIT
+G6 shot (8,7)   → MISS
+G6 shot (9,8)   → HIT
+G6 shot (9,9)
+✓ Game 6 done — shots=47 hits=16 sunk=4 shipsLost=3 in=47
+G7/15 vs Vega Marauder (WARSHIP) — placing ships
+G7 shot (4,4)   → MISS
+G7 shot (3,3)   → MISS
+G7 shot (5,5)   → MISS
+G7 shot (2,2)   → HIT
+G7 shot (2,3)   → MISS
+G7 shot (3,2)   → HIT
+G7 shot (4,2)   → HIT
+G7 shot (5,2)   → HIT
+G7 shot (6,2)   → SINK CARRIER
+G7 shot (2,6)   → MISS
+G7 shot (6,6)   → MISS
+G7 shot (3,7)   → MISS
+G7 shot (0,4)   → HIT
+G7 shot (0,3)   → MISS
+G7 shot (0,5)   → HIT
+G7 shot (0,6)   → HIT
+G7 shot (0,7)   → SINK BATTLESHIP
+G7 shot (7,7)   → HIT
+G7 shot (7,6)   → MISS
+G7 shot (6,7)   → MISS
+G7 shot (7,8)   → MISS
+G7 shot (8,7)   → HIT
+G7 shot (9,7)   → SINK CRUISER
+G7 shot (4,6)   → HIT
+G7 shot (4,7)   → HIT
+G7 shot (4,5)   → SINK SUBMARINE
+G7 shot (7,5)   → MISS
+G7 shot (8,4)   → MISS
+G7 shot (0,0)   → MISS
+G7 shot (6,4)   → MISS
+G7 shot (8,0)   → MISS
+G7 shot (8,2)   → MISS
+G7 shot (9,1)   → HIT
+G7 shot (9,0)
+✓ Game 7 done — shots=33 hits=16 sunk=4 shipsLost=2 in=33
+G8/15 vs Andromeda Cruiser (WARSHIP) — placing ships
+G8 shot (1,1)   → HIT
+G8 shot (1,2)   → HIT
+G8 shot (1,3)   → HIT
+G8 shot (1,4)   → HIT
+G8 shot (1,5)   → SINK CARRIER
+G8 shot (3,8)   → HIT
+G8 shot (4,3)   → HIT
+G8 shot (4,4)   → SINK DESTROYER
+G8 shot (4,8)   → HIT
+G8 shot (5,8)   → HIT
+G8 shot (6,0)   → HIT
+G8 shot (6,8)   → SINK BATTLESHIP
+G8 shot (7,0)   → HIT
+G8 shot (8,2)   → HIT
+G8 shot (8,3)   → HIT
+G8 shot (8,4)   → SINK CRUISER
+G8 shot (5,0)
+✓ Game 8 done — shots=16 hits=16 sunk=4 shipsLost=0 in=16
+G9/15 vs Tau Ceti Phantom (WARSHIP) — placing ships
+G9 shot (4,4)   → MISS
+G9 shot (3,3)   → MISS
+G9 shot (5,5)   → MISS
+G9 shot (2,2)   → MISS
+G9 shot (6,6)   → MISS
+G9 shot (2,6)   → MISS
+G9 shot (6,2)   → HIT
+G9 shot (6,3)   → HIT
+G9 shot (6,1)   → HIT
+G9 shot (6,4)   → MISS
+G9 shot (6,0)   → SINK BATTLESHIP
+G9 shot (1,5)   → HIT
+G9 shot (1,4)   → MISS
+G9 shot (2,5)   → HIT
+G9 shot (3,5)   → HIT
+G9 shot (0,5)   → HIT
+G9 shot (4,5)   → SINK CARRIER
+G9 shot (1,1)   → MISS
+G9 shot (7,7)   → MISS
+G9 shot (8,5)   → HIT
+G9 shot (8,4)   → HIT
+G9 shot (8,3)   → MISS
+G9 shot (8,6)   → SINK SUBMARINE
+G9 shot (3,1)   → MISS
+G9 shot (2,0)   → MISS
+G9 shot (2,8)   → MISS
+G9 shot (3,7)   → MISS
+G9 shot (6,8)   → MISS
+G9 shot (0,2)   → MISS
+G9 shot (4,2)   → MISS
+G9 shot (3,9)   → MISS
+G9 shot (6,9)   → MISS
+G9 shot (1,3)   → MISS
+G9 shot (1,7)   → MISS
+G9 shot (4,8)   → MISS
+G9 shot (5,7)   → MISS
+G9 shot (9,1)   → MISS
+G9 shot (1,9)   → MISS
+G9 shot (8,1)   → MISS
+G9 shot (0,0)   → MISS
+G9 shot (0,8)   → HIT
+G9 shot (0,7)   → MISS
+G9 shot (1,8)   → MISS
+G9 shot (0,9)   → SINK DESTROYER
+G9 shot (7,1)   → MISS
+G9 shot (7,9)   → HIT
+G9 shot (8,9)   → HIT
+G9 shot (9,9)
+✓ Game 9 done — shots=47 hits=16 sunk=4 shipsLost=3 in=47
+G10/15 vs Rigel Reaver (WARSHIP) — placing ships
+G10 shot (4,4)   → MISS
+G10 shot (3,3)   → HIT
+G10 shot (3,4)   → MISS
+G10 shot (4,3)   → HIT
+G10 shot (5,3)   → MISS
+G10 shot (2,3)   → SINK SUBMARINE
+G10 shot (6,6)   → MISS
+G10 shot (7,5)   → MISS
+G10 shot (3,7)   → MISS
+G10 shot (4,8)   → HIT
+G10 shot (3,8)   → MISS
+G10 shot (5,8)   → MISS
+G10 shot (4,7)   → HIT
+G10 shot (4,6)   → HIT
+G10 shot (4,5)   → HIT
+G10 shot (4,9)   → SINK CARRIER
+G10 shot (7,1)   → MISS
+G10 shot (6,0)   → MISS
+G10 shot (8,4)   → MISS
+G10 shot (0,6)   → MISS
+G10 shot (3,1)   → MISS
+G10 shot (9,3)   → MISS
+G10 shot (2,0)   → HIT
+G10 shot (3,0)   → HIT
+G10 shot (1,0)   → HIT
+G10 shot (4,0)   → MISS
+G10 shot (0,0)   → SINK BATTLESHIP
+G10 shot (1,7)   → HIT
+G10 shot (1,6)   → MISS
+G10 shot (0,7)   → MISS
+G10 shot (1,8)   → SINK DESTROYER
+G10 shot (6,3)   → MISS
+G10 shot (8,2)   → HIT
+G10 shot (8,1)   → HIT
+G10 shot (8,0)   → MISS
+G10 shot (8,3)
+✓ Game 10 done — shots=35 hits=16 sunk=4 shipsLost=1 in=35
+G11/15 vs Antares Predator (WARSHIP) — placing ships
+G11 shot (4,4)   → MISS
+G11 shot (3,3)   → MISS
+G11 shot (5,5)   → MISS
+G11 shot (2,2)   → HIT
+G11 shot (2,3)   → MISS
+G11 shot (3,2)   → HIT
+G11 shot (4,2)   → HIT
+G11 shot (5,2)   → HIT
+G11 shot (6,2)   → SINK CARRIER
+G11 shot (2,6)   → MISS
+G11 shot (6,6)   → MISS
+G11 shot (3,7)   → MISS
+G11 shot (0,4)   → HIT
+G11 shot (0,3)   → MISS
+G11 shot (0,5)   → HIT
+G11 shot (0,6)   → HIT
+G11 shot (0,7)   → SINK BATTLESHIP
+G11 shot (7,7)   → HIT
+G11 shot (7,6)   → MISS
+G11 shot (6,7)   → MISS
+G11 shot (7,8)   → MISS
+G11 shot (8,7)   → HIT
+G11 shot (9,7)   → SINK CRUISER
+G11 shot (4,6)   → HIT
+G11 shot (4,7)   → HIT
+G11 shot (4,5)   → SINK SUBMARINE
+G11 shot (7,5)   → MISS
+G11 shot (8,4)   → MISS
+G11 shot (0,0)   → MISS
+G11 shot (6,4)   → MISS
+G11 shot (8,0)   → MISS
+G11 shot (8,2)   → MISS
+G11 shot (9,1)   → HIT
+G11 shot (9,0)
+✓ Game 11 done — shots=33 hits=16 sunk=4 shipsLost=1 in=33
+G12/15 vs Betelgeuse Berserker (WARSHIP) — placing ships
+G12 shot (4,4)   → MISS
+G12 shot (3,3)   → HIT
+G12 shot (3,4)   → MISS
+G12 shot (4,3)   → MISS
+G12 shot (3,2)   → MISS
+G12 shot (2,3)   → HIT
+G12 shot (1,3)   → HIT
+G12 shot (0,3)   → SINK BATTLESHIP
+G12 shot (5,5)   → MISS
+G12 shot (6,6)   → HIT
+G12 shot (6,5)   → MISS
+G12 shot (5,6)   → MISS
+G12 shot (6,7)   → SINK DESTROYER
+G12 shot (5,1)   → HIT
+G12 shot (4,1)   → MISS
+G12 shot (5,2)   → MISS
+G12 shot (6,1)   → HIT
+G12 shot (7,1)   → SINK SUBMARINE
+G12 shot (9,3)   → MISS
+G12 shot (3,9)   → MISS
+G12 shot (2,6)   → HIT
+G12 shot (1,6)   → MISS
+G12 shot (2,7)   → HIT
+G12 shot (2,5)   → MISS
+G12 shot (2,8)   → SINK CRUISER
+G12 shot (8,4)   → MISS
+G12 shot (9,5)   → HIT
+G12 shot (9,4)   → MISS
+G12 shot (8,5)   → MISS
+G12 shot (9,6)   → HIT
+G12 shot (9,7)   → HIT
+G12 shot (9,8)   → HIT
+G12 shot (9,9)
+✓ Game 12 done — shots=32 hits=16 sunk=4 shipsLost=2 in=32
+G13/15 vs Polaris Warship (WARSHIP) — placing ships
+G13 shot (4,4)   → MISS
+G13 shot (3,3)   → MISS
+G13 shot (5,5)   → MISS
+G13 shot (2,2)   → MISS
+G13 shot (6,6)   → MISS
+G13 shot (2,6)   → MISS
+G13 shot (6,2)   → HIT
+G13 shot (6,3)   → HIT
+G13 shot (6,1)   → HIT
+G13 shot (6,4)   → MISS
+G13 shot (6,0)   → SINK BATTLESHIP
+G13 shot (1,5)   → HIT
+G13 shot (1,4)   → MISS
+G13 shot (2,5)   → HIT
+G13 shot (3,5)   → HIT
+G13 shot (0,5)   → HIT
+G13 shot (4,5)   → SINK CARRIER
+G13 shot (1,1)   → MISS
+G13 shot (7,7)   → MISS
+G13 shot (8,5)   → HIT
+G13 shot (8,4)   → HIT
+G13 shot (8,3)   → MISS
+G13 shot (8,6)   → SINK SUBMARINE
+G13 shot (3,1)   → MISS
+G13 shot (2,0)   → MISS
+G13 shot (2,8)   → MISS
+G13 shot (3,7)   → MISS
+G13 shot (6,8)   → MISS
+G13 shot (0,2)   → MISS
+G13 shot (4,2)   → MISS
+G13 shot (3,9)   → MISS
+G13 shot (6,9)   → MISS
+G13 shot (1,3)   → MISS
+G13 shot (1,7)   → MISS
+G13 shot (4,8)   → MISS
+G13 shot (5,7)   → MISS
+G13 shot (9,1)   → MISS
+G13 shot (1,9)   → MISS
+G13 shot (8,1)   → MISS
+G13 shot (0,0)   → MISS
+G13 shot (0,8)   → HIT
+G13 shot (0,7)   → MISS
+G13 shot (1,8)   → MISS
+G13 shot (0,9)   → SINK DESTROYER
+G13 shot (7,5)   → MISS
+G13 shot (4,0)   → MISS
+G13 shot (9,9)   → HIT
+G13 shot (8,9)   → HIT
+G13 shot (7,9)
+✓ Game 13 done — shots=48 hits=16 sunk=4 shipsLost=4 in=48
+G14/15 vs Sirius Dreadnought (WARSHIP) — placing ships
+G14 shot (4,4)   → MISS
+G14 shot (3,3)   → MISS
+G14 shot (5,5)   → MISS
+G14 shot (2,2)   → HIT
+G14 shot (2,3)   → MISS
+G14 shot (3,2)   → HIT
+G14 shot (4,2)   → MISS
+G14 shot (1,2)   → HIT
+G14 shot (0,2)   → SINK BATTLESHIP
+G14 shot (6,6)   → MISS
+G14 shot (2,6)   → HIT
+G14 shot (1,6)   → HIT
+G14 shot (3,6)   → MISS
+G14 shot (0,6)   → SINK SUBMARINE
+G14 shot (7,3)   → MISS
+G14 shot (8,4)   → MISS
+G14 shot (4,8)   → MISS
+G14 shot (6,0)   → MISS
+G14 shot (7,7)   → MISS
+G14 shot (6,2)   → MISS
+G14 shot (9,3)   → MISS
+G14 shot (3,9)   → MISS
+G14 shot (5,1)   → MISS
+G14 shot (2,0)   → HIT
+G14 shot (1,0)   → HIT
+G14 shot (3,0)   → HIT
+G14 shot (4,0)   → HIT
+G14 shot (0,0)   → SINK CARRIER
+G14 shot (5,7)   → MISS
+G14 shot (6,4)   → MISS
+G14 shot (7,1)   → MISS
+G14 shot (7,5)   → MISS
+G14 shot (8,2)   → MISS
+G14 shot (8,6)   → MISS
+G14 shot (6,8)   → MISS
+G14 shot (9,6)   → MISS
+G14 shot (6,9)   → MISS
+G14 shot (4,6)   → MISS
+G14 shot (5,3)   → MISS
+G14 shot (2,4)   → HIT
+G14 shot (1,4)   → HIT
+G14 shot (0,4)   → SINK CRUISER
+G14 shot (8,0)   → MISS
+G14 shot (8,8)   → MISS
+G14 shot (9,1)   → MISS
+G14 shot (1,9)   → MISS
+G14 shot (2,8)   → MISS
+G14 shot (9,5)   → MISS
+G14 shot (9,7)   → MISS
+G14 shot (0,8)   → HIT
+G14 shot (1,8)
+✓ Game 14 done — shots=50 hits=16 sunk=4 shipsLost=4 in=50
+G15/15 vs Centauri Battlecruiser (WARSHIP) — placing ships
+G15 shot (4,4)   → MISS
+G15 shot (3,3)   → MISS
+G15 shot (5,5)   → MISS
+G15 shot (2,2)   → MISS
+G15 shot (6,6)   → MISS
+G15 shot (2,6)   → MISS
+G15 shot (6,2)   → HIT
+G15 shot (6,3)   → HIT
+G15 shot (6,1)   → HIT
+G15 shot (6,4)   → MISS
+G15 shot (6,0)   → SINK BATTLESHIP
+G15 shot (1,5)   → HIT
+G15 shot (1,4)   → MISS
+G15 shot (2,5)   → HIT
+G15 shot (3,5)   → HIT
+G15 shot (0,5)   → HIT
+G15 shot (4,5)   → SINK CARRIER
+G15 shot (1,1)   → MISS
+G15 shot (7,7)   → MISS
+G15 shot (8,5)   → MISS
+G15 shot (2,0)   → MISS
+G15 shot (2,8)   → HIT
+G15 shot (1,8)   → MISS
+G15 shot (3,8)   → MISS
+G15 shot (2,7)   → HIT
+G15 shot (2,9)   → SINK SUBMARINE
+G15 shot (3,1)   → MISS
+G15 shot (6,8)   → MISS
+G15 shot (0,2)   → MISS
+G15 shot (4,2)   → MISS
+G15 shot (8,2)   → MISS
+G15 shot (9,3)   → MISS
+G15 shot (9,6)   → MISS
+G15 shot (6,9)   → MISS
+G15 shot (1,3)   → MISS
+G15 shot (5,7)   → MISS
+G15 shot (8,6)   → MISS
+G15 shot (9,1)   → MISS
+G15 shot (0,0)   → HIT
+G15 shot (0,1)   → MISS
+G15 shot (1,0)   → SINK DESTROYER
+G15 shot (3,7)   → MISS
+G15 shot (4,0)   → MISS
+G15 shot (1,7)   → MISS
+G15 shot (5,3)   → MISS
+G15 shot (9,9)   → MISS
+G15 shot (2,4)   → MISS
+G15 shot (4,8)   → MISS
+G15 shot (8,4)
+================= ATTEMPT SUMMARY =================
+finalScore : 701
+wins/losses: 14/1
+hitDiff    : 136
+oppSunk    : 74
+shipsLost  : 30
+newBest    : true
+
+per-game:
+  ord  opponent              cls      shots hits sunk lost  in
+    1  Hydra Probe          SCOUT       16   16    4    0  16
+    2  Lyra Skiff           SCOUT       42   16    4    1  42
+    3  Orion Scout          SCOUT       49   16    4    3  49
+    4  Eridanus Drone       SCOUT       16   16    4    0  16
+    5  Pleiades Skimmer     SCOUT       35   16    4    1  35
+    6  Cygnus Stalker       WARSHIP     47   16    4    3  47
+    7  Vega Marauder        WARSHIP     33   16    4    2  33
+    8  Andromeda Cruiser    WARSHIP     16   16    4    0  16
+    9  Tau Ceti Phantom     WARSHIP     47   16    4    3  47
+   10  Rigel Reaver         WARSHIP     35   16    4    1  35
+   11  Antares Predator     WARSHIP     33   16    4    1  33
+   12  Betelgeuse Berserker WARSHIP     32   16    4    2  32
+   13  Polaris Warship      WARSHIP     48   16    4    4  48
+   14  Sirius Dreadnought   WARSHIP     50   16    4    4  50
+==================================================
+

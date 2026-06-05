@@ -1,0 +1,8 @@
+node_modules/
+.agent-credentials.json
+*.log
+.DS_Store
+
+# StarSling-private (founder DMs + internal interview rubric) — not for a public repo
+ConversationWithDaniel.md
+ApplicationProcessGuidelines.md

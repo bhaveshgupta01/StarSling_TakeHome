@@ -1,0 +1,85 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[left=0.4in,right=0.4in,top=0.3in,bottom=0.3in]{geometry}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{microtype}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{3em}
+\tolerance=1500
+\hbadness=10000
+\sloppy
+\urlstyle{same}
+\titleformat{\section}{\vspace{-13pt}\scshape\raggedright\large}{}{0em}{}[\vspace{-2pt}\hrule\vspace{-9pt}]
+\setlist[itemize]{leftmargin=1.25em, itemsep=0pt, topsep=0pt, partopsep=0pt}
+\newcommand{\resumeEntry}[3]{\vspace{2pt}\noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}\textbf{\large #1} & \textbf{#3} \\\textit{#2} & \\\end{tabular*}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape Bhavesh Gupta} \\ \vspace{2pt}
+\small
+New York, NY $\cdot$
+\href{tel:+12014928876}{+1 (201) 492-8876} $\cdot$
+\href{mailto:bg2896@nyu.edu}{bg2896@nyu.edu} $\cdot$
+\href{https://libralpanda.vercel.app}{\textbf{libralpanda.vercel.app}} $\cdot$
+\href{https://linkedin.com/in/bhaveshgupta01}{linkedin.com/in/bhaveshgupta01} $\cdot$
+\href{https://github.com/bhaveshgupta01}{github.com/bhaveshgupta01}
+\end{center}
+
+\section{Education}
+\resumeEntry{NYU Courant Institute of Mathematical Sciences, Computing, and Data Science}{Master of Science, Computer Science \textbar{} Algorithms, Operating Systems, Machine Learning, Efficient AI}{Sept 2025 -- May 2027}
+\resumeEntry{USICT, GGS Indraprastha University, Delhi}{Bachelor of Technology, Information Technology \textbar{} GPA 3.72/4.0, Dean's List \textbar{} Published ICAIA '24 (Best Presenter)}{Aug 2020 -- June 2024}
+
+\vspace{-6pt}
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Agent Harness: MCP, Tool Use, Memory, Retry, Feedback Loops (Summer 2026):} Boba MCP orchestrating 85+ tools across 9 chains with 5-layer risk-gate retries (SignalFlow); 3-tier self-correcting feedback loops on agentic medical RAG (HealthRAG, 6-node retrieve $\to$ grade $\to$ route $\to$ fallback $\to$ generate $\to$ cite); LangGraph ReAct agent with two-tool retrieval (Bhavesh.ai)
+    \item \textbf{Python, \textit{TypeScript}, \textit{AWS}, Git, CI/CD:} Python (FastAPI, asyncio, LangChain, PyTorch), \textit{TypeScript} JavaScript (React 19, Next.js); Git, GitHub Actions CI/CD; \textit{AWS} EC2/S3 with 1,276 lines IaC across multi-cloud (CrossCloud); Docker, Linux
+    \item \textbf{0-to-1 Builder, Autonomous Execution \& Comfort Deleting Code:} Solo 8K LOC GyBuddy in React Native + Gemini Live with 65/65 tests at 100\% pass; SignalFlow solo build (every line of code mine) running unsupervised overnight at +5.6\% / 78\% win rate; 1st Place Pulse NYC (real-time deploy under 5s); comfort iterating with Claude Code and Cursor
+    \item \textbf{Event-Driven Systems, Headless Product (API/CLI/Markdown):} MQTT/Mosquitto streaming with hash-chained audit ledger (CrossCloud); webhook ingestion across distributed peers; pypdf and tectonic CLI toolchains; published research with structured Markdown writeups (ICAIA '24, 98\%, Best Presenter)
+\end{itemize}
+
+\vspace{-4pt}
+\section{Experience}
+
+\resumeEntry{Tata Consultancy Services}{Software Engineer \textbar{} Client: Northern Trust (US Global Custodian Bank)}{June 2024 -- July 2025}
+\begin{itemize}
+    \item Architected production Java / Spring Boot / PostgreSQL REST API for \textbf{2,600+ users} at \textbf{sub-second p95} and \textbf{99.2\% uptime} across \textbf{26M+ weekly txns}; tuned JDBC connection pooling, indexed PostgreSQL query plans, and ran async non-blocking I/O to absorb load spikes.
+    \item Engineered Python + LangChain + GPT-4 GenAI validation pipeline; \textbf{cut QA cycles 30\%}, caught \textbf{15+ pre-release defects}; collaborated with Product/Compliance/Ops.
+\end{itemize}
+
+\resumeEntry{Synopsys Inc.}{Deep Learning Intern -- Director of Solutions, Healthcare \& Bioinformatics \textbar{} R\&D Research Project}{July 2023 -- Sept 2023}
+\begin{itemize}
+    \item Trained a PyTorch drug-target binding affinity predictor on \textbf{3.2M protein-ligand samples} at \textbf{86\% accuracy}; optimized batch inference via memory-mapped I/O, compressing internal validation runs from weeks to \textbf{48 hours}; accelerated drug-discovery R\&D \textbf{85\%} and deployed on Linux/AWS EC2 for the research team.
+\end{itemize}
+
+\resumeEntry{Google Developer Student Club, GGSIPU}{Android Development Lead \& Google Compose Camp Facilitator (Official)}{March 2022 -- March 2023}
+\begin{itemize}
+    \item Delivered Google's official Jetpack Compose curriculum to \textbf{50+ students} across 12+ workshops (declarative UI, state, Navigation, Material Design 3); lifted retention \textbf{25\%}; shipped a production Kotlin + Compose campus app (location services, Retrofit, LiveData) adopted by \textbf{200+ students}.
+\end{itemize}
+
+\resumeEntry{eSec Forte Technologies}{Android Security Intern}{July 2022 -- Sept 2022}
+\begin{itemize}
+    \item Engineered a Kotlin static/dynamic scanner analyzing IPC channels and intent filters, identifying \textbf{15+ zero-day vulnerabilities} across \textbf{100+ enterprise client apps} over 3 release cycles.
+\end{itemize}
+
+\vspace{-5pt}
+\section{Key Projects}
+\begin{itemize}
+    \item \href{https://github.com/bhaveshgupta01/signalflow}{\textbf{SignalFlow -- Autonomous AI Trading Agent}} \textit{(Python asyncio, Gemini 2.5 Flash Lite, Boba Agents MCP 85+ tools/9 chains, Hyperliquid, Next.js 16):} Architected 6 async triggers (Polymarket 40s, KOL whales 50s, funding 75s, discovery 100s, cross-chain 150s, portfolio 240s) feeding a Gemini agent loop; engineered a \textbf{5-layer risk engine} (drawdown breaker, margin, liquidity gate, ATR-based SL/TP, fill tracking); \textbf{overnight +5.6\% at 78\% win rate}.
+    \item \href{https://libralpanda.vercel.app}{\textbf{Bhavesh.ai -- First-Person AI Twin Portfolio}} \textit{(React 19, Vite, Tailwind, FastAPI, LangGraph ReAct, Gemini 2.5 Flash, ChromaDB, Railway):} Shipped a conversational portfolio where the chat IS the navigation -- LangGraph ReAct agent with two tools (role-filtered ChromaDB RAG over 12 markdowns + DuckDuckGo live search) answers in first-person, scrolls the page, and renders inline stat cards in under a second.
+    \item \href{https://github.com/bhaveshgupta01/CrossCloudAnalyser}{\textbf{QuantIAN -- Multi-Cloud P2P Financial Analytics}} \textit{(AWS EC2, Azure Container Apps, GCP Compute, MQTT/Mosquitto, scikit-learn Isolation Forest, SHA-256 hash-chained ledger; NYU Cloud Computing):} Built 4 peer services across 3 clouds with runtime capability discovery via a shared registry; every cross-peer action on an append-only ledger with auto-verification; \textbf{1,276 lines of IaC-via-CLI}; hybrid anomaly detection on live MQTT ticks (volatility, VaR 95\%, max drawdown).
+\end{itemize}
+
+\vspace{-5pt}
+\section{Awards, Publication \& Certifications}
+\begin{itemize}
+    \item \textbf{Awards:} 1st Place Pulse NYC AI Hackathon $\cdot$ \textquotedblleft Best Use of Nimble's API,\textquotedblright{} DataDog Agentic Engineering Hackathon (NYC, May 2026) $\cdot$ Strongest Technical Build, Google $\times$ Columbia (50+ teams) $\cdot$ Best Presenter ICAIA '24 $\cdot$ Dean's List $\cdot$ Google's Official Compose Camp Facilitator $\cdot$ Technical Festival Lead (30+ events).
+    \item \textbf{Publication:} \textquotedblleft Deep Transfer Learning for Mammography Classification\textquotedblright{} \textbar{} ICAIA '24 \textbar{} 98\% accuracy \textbar{} \href{https://doi.org/10.24874/PES.SI.25.03A.007}{DOI}. \textbf{Certs:} AWS Cloud Practitioner (in progress); IBM GenAI.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,22 @@
+{
+  "name": "starsling-battleships-agent",
+  "version": "1.0.0",
+  "description": "TypeScript agent that plays Standard Competition v1 Battleships against 15 fixed opponents",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "play": "node --experimental-strip-types src/agent.ts",
+    "auth": "node --experimental-strip-types src/auth-setup.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@auth/agent": "^0.5.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.3"
+  }
+}
