@@ -32,11 +32,44 @@ Since we win ~15/15 every attempt, the win bonus is maxed and the whole game bec
 
 This is the closed loop: *play → log every game to a cumulative archive → re-derive each opponent's danger map → place to dodge it next time.*
 
-## How this addresses the evaluation signals
+## How it got to 787 — iterations and results
 
-- **Technical judgment** — the agent matches what the research says is optimal (probability density is the accepted near-optimum; for line-segment ships the sink phase is provably ≤1 wasted miss). The real edge is *novel*: placing against a learned per-opponent shooting model, which standard Battleship theory doesn't cover. Every change was a hypothesis tested offline, then live. Several promising ideas were **rejected with data** (Monte-Carlo placement, carrier-only tightening, hunt-only maps, info-gain shooting) once they proved to overfit a noisy estimate — see [STRATEGY_FINAL.md](STRATEGY_FINAL.md).
-- **Pragmatism** — single loop on `responseType`, plain functions, no premature abstraction. Pre-flight validation prevents the one fatal error (an illegal move is a terminal DQ, not a retry). Honest about the ceiling: 787 sits at the data-proven frontier (~780–800); 1000 is unreachable against adaptive opponents that randomize placement.
-- **Observability** — every move and outcome is logged; per-game and raw-coordinate records are written each run, and a cumulative archive (`analysis/games_archive.jsonl`) is the agent's memory across attempts. The analysis tooling (`tools/`) is how every strategy claim was verified — heatmaps, determinism checks, adaptivity probes, an offline shot simulator, cross-validation.
+Every jump came from a logged observation, not a guess. The score roughly doubled and then climbed in steps as the bottleneck moved from *shooting* to *ship loss*:
+
+| # | Change | Why (what the data showed) | Score |
+|---|---|---|---|
+| 1 | Hunt + target (parity) | Two-phase baseline | 58 |
+| 2 | Direction-lock + sink-retire | Extend a hit along its axis, then stop | 180 |
+| 3 | Bottom-biased placement | Heatmaps: opponents sweep top-down, rows 8–9 cold | 284 |
+| 4 | Probability density (L4) | Enumerate all legal placements, fire max-coverage cell | 369 |
+| 5 | Focus-fire (`8^hits`) + checkerboard hunt | Sharper targeting; cut median shots ~51→48 | 468 |
+| 6 | No-touch-halo prune | Data: opponents never place adjacent (0/992) → a hit's diagonals and a sink's halo are water | 601 |
+| 7 | Concentrate in coldest rows (SKEW=3) | Safe *only* once no-touch stops chain-sinks | 646 |
+| 8 | Per-opponent danger-map placement | Each opponent fires on a learnable per-cell timing | 701 |
+| 9 | Win-length-matched maps (K = median win length) | Long-game opponents (Polaris ~54 shots) need real signal in the bottom rows | 720 |
+| 10 | Penalty-weighted placement | Ship-loss by class: CARRIER dies 59% vs DESTROYER 38% → protect big ships first | **787** |
+
+### What I tried and *rejected* (with the data reason)
+
+Knowing when to stop optimizing was as important as the wins above. Each of these was implemented, tested offline, and dropped:
+
+| Idea | Why it was rejected |
+|---|---|
+| Info-gain shot tie-break | No gain — density is already at the shooting floor (~40 shots, below textbook) |
+| Touching / clustered placement | All opponents are adaptive (fire adjacent-to-hit 52–81%) → every one chain-sinks. No blind shooter exists |
+| Carrier-only "absolute safest" cell | Overfits the danger map's single argmin → *worse* |
+| Monte-Carlo joint placement | Overfits the noisy map hardest (+26 loss). The greedy's randomization is a regularizer |
+| Hunt-only "decontaminated" maps | Worse — target-mode shots genuinely predict exposure |
+| Centauri fingerprint | 2-sample false positive; it randomizes (confirmed at 19 samples) |
+| Re-extracting maps from a bigger archive | Cross-validation shows maps saturate at ~25 games/opponent — we already have more |
+
+The recurring lesson: the danger map is a *noisy estimate*, and every attempt to optimize harder against it overfit and lost. The shipped design under-trusts it on purpose. Full detail and the web/academic literature check are in [STRATEGY_FINAL.md](STRATEGY_FINAL.md).
+
+## The three evaluation signals, and where to see them
+
+- **Technical judgment** → the iteration tables above. Every move was a logged hypothesis; the rejected list shows the same rigor applied to *not* shipping things.
+- **Pragmatism** → [`src/agent.ts`](src/agent.ts). One loop on `responseType`, plain functions, pre-flight validation (an illegal move is a terminal DQ, so it's caught before sending). And honesty about the ~780–800 ceiling instead of chasing an unreachable 1000.
+- **Observability** → [`analysis/games_archive.jsonl`](analysis/games_archive.jsonl) (the loop's cross-attempt memory) and [`tools/`](tools/) (every claim above was verified here — heatmaps, determinism and adaptivity probes, an offline shot simulator, cross-validation).
 
 ## Honest postmortem
 
